@@ -18,8 +18,8 @@
 </head>
 
 <body class="bg-dark dark:bg-gray-900 dark:text-white">
-  <nav class=" bg-transparent  sticky ">
-    <div id="sidebar" class="transform -translate-x- transition-transform duration-300 ease-in-out">
+  <nav class=" bg-transparent  sticky  ">
+    <div id="sidebar" class="cursor-pointer transform  -translate-x- transition-transform duration-300 ease-in-out">
       <div
         class="min-h-screen pl-2 fixed  mt-1 top-0 w-65  bg-black/40 backdrop-blur-lg border-r rounded-r-md border-white/30 shadow-lg  flex flex-col">
         <!-- sidebar content -->
@@ -31,7 +31,7 @@
           <h1 class=" text-3xl ml-3 mt-1 font-mono text-blue-500">AniDrive</h1>
         </div>
         <br>
-        <div class="flex gap-3  flex-col ">
+        <div class="flex gap-3 mt-3  flex-col ">
 
 
           <a href="index.html" class="bg-blue-600 w-60 pl-2  flex gap-3 items-center rounded">
@@ -76,14 +76,13 @@
 
 
     <!-- Navbar -->
-    <div class="pt-3 ring-1 flex justify-between">
+    <div id="sidebar2" class="cursor-pointer pt-3  ring-1 flex justify-between">
       <div class="flex pl-3 ">
-
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="size-10  text-white">
+          class="size-10 text-white">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
-        <h1 class=" text-3xl ml-3 mt-1 font-mono text-blue-500">AniDrive</h1>
+        <h1 class=" cursor-pointer text-3xl ml-3 mt-1 font-mono text-blue-500">AniDrive</h1>
 
       </div>
 
@@ -117,11 +116,18 @@
 
 
     </div>
+
     </div>
 
 
   </nav>
+  <div class="flex flex-wrap justify-center bg-amber-50">
+    <a id="sidebar" class="text-blue-500" href="">Test</a>
 
+  </div>
+  <script src="script/script.js">
+
+  </script>
 </body>
 
 </html>
