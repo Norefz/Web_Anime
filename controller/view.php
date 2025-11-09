@@ -12,12 +12,11 @@ if (mysqli_num_rows($result) > 0) {
   while ($row = mysqli_fetch_assoc($result)){
     echo $row["id_anime"] . "<br>";
     echo $row["title"] . "<br>";
-    echo $row["synopsis"] . "<br>";
-    echo $row["genre"] . "<br>";
-    echo $row["date"] . "<br>";
+    echo $row["image"] . "<br>";
     echo $row["rating"] . "<br>";
   }
 }
+mysqli_close($conn);
 
 
 ?>
