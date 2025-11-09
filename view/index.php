@@ -124,18 +124,22 @@
     <h1 class="text-center align-item-center text-dark">Current Season</h1>
 <?php include'../core/error.php';
 $anime = include'../controller/view_anime.php';
+$episode = include'../controller/view_eps.php';
 ?>
 
   
 
     <div class="flex flex-wrap gap-4">
 <?php foreach($anime as $row):?>
+<?php foreach($episode as $raw):?>
+<?php if($raw['id_anime']==$row['id_anime']):?>
       <div class="w-50 h-60 rounded-lg bg-white ">
       <img class="h-full" src="<?php  echo $row['image']; ?>" alt="">
-        <p class="text-center text-blue-400 relative bottom-70 right-14">EPISODE 1</p>
+        <p class="text-center text-blue-400 relative bottom-70 right-14"><?php echo $raw['episode_number']; ?></p>
         <p class="text-center text-blue-400 relative bottom-12"><?php echo $row['title']; ?></p>
       </div>
-
+<?php endif;?>
+<?php endforeach;?>
 <?php endforeach;?>
       </div>
 
