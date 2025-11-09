@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AniDrive</title>
+  <!--  FONT  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark dark:bg-gray-900 dark:text-white">
+  <nav class=" bg-transparent  sticky  ">
+    <div id="sidebar"
+      class="cursor-pointer transform hidden -translate-x- transition-transform duration-300 ease-in-out">
+      <div
+        class="min-h-screen pl-2 fixed  mt-1 top-0 w-65  bg-black/40 backdrop-blur-lg border-r rounded-r-md border-white/30 shadow-lg  flex flex-col">
+        <!-- sidebar content -->
+        <div class="flex mt-3">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-10  text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <h1 class=" text-3xl ml-3 mt-1 font-mono text-blue-500">AniDrive</h1>
+        </div>
+        <br>
+        <div class="flex gap-3 mt-3  flex-col ">
+
+
+          <a href="index.html" class="bg-blue-600 w-60 pl-2  flex gap-3 items-center rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-10">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+            <p>Home</p>
+          </a>
+          <a href="" class="flex pl-2 gap-3 items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" />
+            </svg>
+            <p>OngoingAnime</p>
+          </a>
+          <a href="" class="flex gap-3 pl-2  item-center "> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z" />
+            </svg>
+            <p class="mt-2">AnimeList</p>
+          </a>
+
+
+
+        </div>
+        <!-- bottom bar -->
+        <div class="mt-auto ml-8 mb-3">
+          <a href="" class="  items-center flex gap-3"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+            </svg>
+            <p>dark mode</p>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Navbar -->
+    <div id="sidebar2" class="cursor-pointer pt-3  ring-1 flex justify-between">
+      <div class="flex pl-3 ">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-10 text-white">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <h1 class=" cursor-pointer text-3xl ml-3 mt-1 font-mono text-blue-500">AniDrive</h1>
+
+      </div>
+
+
+      <div class="test">
+
+
+        <form action="relative">
+
+          <input type="text" value="" class="border h-8 w-120 rounded-full border-blue-50 text-white text-center "
+            placeholder="search anime in here">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            class="size-6 relative left-112 bottom-7  text-white">
+            <path fill-rule="evenodd"
+              d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
+              clip-rule="evenodd" />
+          </svg>
+        </form>
+
+      </div>
+      <div class="mr-4">
+        <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-8 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+          </svg>
+
+        </a>
+      </div>
+
+
+    </div>
+
+    </div>
+  </nav>
+  <div class=" mx-15 mt-1.5">
+    <h1 class="text-center align-item-center text-dark">Current Season</h1>
+<?php include'../core/error.php';
+$anime = include'../controller/view_anime.php';
+?>
+
+  
+
+    <div class="flex flex-wrap gap-4">
+<?php foreach($anime as $row):?>
+      <div class="w-50 h-60 rounded-lg bg-white ">
+      <img class="h-full" src="<?php  echo $row['image']; ?>" alt="">
+        <p class="text-center text-blue-400 relative bottom-70 right-14">EPISODE 1</p>
+        <p class="text-center text-blue-400 relative bottom-12"><?php echo $row['title']; ?></p>
+      </div>
+
+<?php endforeach;?>
+      </div>
+
+    </div>
+  <script src="script/script.js">
+
+  </script>
+</body>
+
+</html>
