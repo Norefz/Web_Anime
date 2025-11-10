@@ -118,7 +118,7 @@ if (isset($_GET['id_anime'])) {
       <!-- Submit Button -->
       <button 
         type="submit"
-        name="submit"
+        name="update"
         class="w-full bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-md font-semibold transition"
       >
         Save Anime

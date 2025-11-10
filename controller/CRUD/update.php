@@ -1,7 +1,7 @@
 <?php  
 <?php  
 include'../../core/connect.php';
-if (isset($_POST['submit'])) {
+if (isset($_POST['update'])) {
   $id=$_GET['id_anime'];
   $title= $_POST['title'];
   $image = $_POST['image'];
