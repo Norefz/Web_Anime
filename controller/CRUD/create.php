@@ -10,7 +10,8 @@ if (isset($_POST['submit'])) {
   $rating = $_POST['rating'];
   $result = mysql_query($conn,"INSERT INTO anime(image,title,synopsis,genre,date,rating)
     VALUES('$title','$synopsis','$genre','$date','$rating')";
-  # code...
+  mysql_query($conn,$result);
+  echo"<h1>Anime Added!</h1>";
 }
 
 
