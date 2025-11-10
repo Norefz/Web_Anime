@@ -97,7 +97,7 @@ if (isset($_GET['id_anime'])) {
         <input 
           type="date" 
           name="date"
-           value="<?php echo $data['date'];?>"
+            value="<?php echo date('Y-m-d', strtotime($data['date'])); ?>" 
           class="w-full p-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:ring-2 focus:ring-blue-500"
         >
       </div>
