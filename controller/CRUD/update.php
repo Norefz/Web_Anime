@@ -13,12 +13,9 @@ if (isset($_POST['update'])) {
     echo"missing index!";
     }
     
-  // $sql ="UPDATE  anime SET title='$title',image='$image',synopsis='$synopsis',genre='$genre',date='$date',rating='$rating' WHERE id_anime = $id";
+   $sql ="UPDATE  anime SET title='$title',image='$image',synopsis='$synopsis',genre='$genre',date='$date',rating='$rating' WHERE id_anime = $id";
 
-    $sql = "UPDATE anime 
-            SET title='$title', image='$image', synopsis='$synopsis', 
-                genre='$genre', date='$date', rating='$rating' 
-            WHERE id_anime=$id";
+    
 
   if (mysqli_query($conn,$sql)) {
     echo"UPDATE Succesfully";
