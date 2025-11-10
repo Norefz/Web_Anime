@@ -1,5 +1,6 @@
 <?php  
-// --- Step 1: Check if id_anime exists in URL ---
+include'../core/connect.php';
+include'../core/error.php';
 if (isset($_GET['id_anime'])) {
     $id = $_GET['id_anime'];
 
@@ -72,9 +73,10 @@ if (isset($_GET['id_anime'])) {
         <textarea 
           name="synopsis" 
           placeholder="Enter synopsis..."
-           value="<?php echo $data['synopsis'];?>"
+           value=""
           class="w-full p-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:ring-2 focus:ring-blue-500 h-24"
-        ></textarea>
+          
+        ><?php echo $data['synopsis'];?></textarea>
       </div>
 
       <!-- Genre -->

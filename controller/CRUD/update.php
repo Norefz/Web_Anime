@@ -15,7 +15,7 @@ if (isset($_POST['update'])) {
     echo"UPDATE Succesfully";
   }
   else {
-    echo"Failed TO UPDATE";
+    echo"Failed TO UPDATE".mysqli_error($conn);
   }
   mysqli_query($conn,$result);
   echo"<h1>Anime Added!</h1>";
