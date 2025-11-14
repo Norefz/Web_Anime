@@ -1,17 +1,15 @@
 <?php  
 include'../../core/connect.php';
 if (isset($_POST['submit'])) {
-  $title= $_POST['title'];
-  $image = $_POST['image'];
-  $synopsis = $_POST['synopsis'];
-  $genre = $_POST['genre'];
-  $date = $_POST['date'];
-  $rating = $_POST['rating'];
+  $episode_number= $_POST['episode_number'];
+  $title = $_POST['title'];
+  $video_url = $_POST['video_url'];
+  $thumbnail_url = $_POST['thumbnail_url'];
     
-  $result ="INSERT INTO anime(title,image,synopsis,genre,date,rating)
-    VALUES('$title','$image','$synopsis','$genre','$date','$rating')";
+  $result ="INSERT INTO episode(episode_number,title,video_url,thumbnail_url,date)
+    VALUES('$episode_number','$title','$video_url','$thumbnail_url')";
   mysqli_query($conn,$result);
-  echo"<h1>Anime Added!</h1>";
+  echo"<h1>Episode Added!</h1>";
 
 }
 
